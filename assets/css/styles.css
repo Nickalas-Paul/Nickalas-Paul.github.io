@@ -470,6 +470,62 @@ ul li:hover {
   padding: 14px 14px;
 }
 
+/* Notes Section */
+.notes-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.notes-intro p {
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.notes-container {
+  padding: 60px 0;
+}
+
+.notes-archive {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.note-entry {
+  padding: 32px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  background: rgba(116, 255, 199, 0.02);
+  transition: all 0.2s ease;
+}
+
+.note-entry:hover {
+  border-color: rgba(116, 255, 199, 0.25);
+  background: rgba(116, 255, 199, 0.04);
+}
+
+.note-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 16px 0;
+  color: var(--text);
+  letter-spacing: 0.25px;
+}
+
+.note-entry p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.note-entry p + p {
+  margin-top: 12px;
+}
+
 /* Footer */
 .site-footer {
   padding: 36px 0 48px;
@@ -600,5 +656,26 @@ ul li:hover {
 
   .contact-box h3 {
     font-size: 16px;
+  }
+
+  .notes-container {
+    padding: 48px 0;
+  }
+
+  .notes-archive {
+    gap: 32px;
+  }
+
+  .note-entry {
+    padding: 20px;
+  }
+
+  .note-title {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .note-entry p {
+    font-size: 14px;
   }
 }
